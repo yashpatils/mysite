@@ -23,11 +23,6 @@ h1 {
 	line-height: 2;
 }
 
-#title {
-	margin-bottom: 0;
-	color: #492F10;
-}
-
 h2, h3 {
 	font-family: 'Montserrat', sans-serif;
 	color: #DF5E5E;
@@ -42,12 +37,23 @@ h3 {
 	font-size: 1.4em;;
 }
 
+img {
+	user-select: none;
+}
+
+#title {
+	margin-bottom: 0;
+	color: #492F10;
+	user-select: none;
+}
+
 #subtitle {
 	font-size: 1.4rem;
 	margin-top: 10px;
 	margin-bottom: 40px;
 	font-weight: normal;
 	color: #5D534A;
+	user-select: none;
 }
 
 .top-container {
@@ -178,9 +184,6 @@ h3 {
 	background-color: #492F10;
 }
 
-.middle-container {
-}
-
 .bottom-container {
 	background-color: #FDD2BF;
 	height: 150px;
@@ -211,4 +214,85 @@ h3 {
 
 .bottom-container > p > a {
 	color: #40514E;
+}
+
+/* For mobile */
+@media (max-width:479px) {
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	#title {
+		font-size: 4.5rem;
+	}
+	
+	#subtitle {
+		font-size: 1rem;
+	}
+
+	#cloud-img2 {
+		top: 220px;
+		right: 60px;
+	}
+
+	#cloud-img1 {
+		top: 40px;
+		left: 60px;
+	}
+
+	.profile p {
+		width: 90%;
+		font-size: 1rem;
+	}
+
+	.skills-img[alt="Coding"], .skills-img[alt="Artificial-Intelligence"] {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.skill-row h3 {
+		font-size: 1.25rem;
+		text-align: center;
+		margin: 40px 0 10px;
+	}
+
+	.skill-row p {
+		font-size: 1rem;
+		text-align: justify;
+	}
+
+	.contact-me h2 {
+		font-size: 2rem;
+	}
+
+	.contact-me h3 {
+		font-size: 1.2rem;
+	}
+
+	.contact-me p {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.btn {
+		font-size: 1rem;
+	}
+	
+	.contact-me {
+		margin-bottom: 50px;;
+	}
+
+	.bottom-container a {
+		font-size: 0.9rem;
+		margin: 15px;
+	}
+
+	.bottom-container p, .bottom-container p a {
+		font-size: 12px;
+	}
+
+	.bottom-container p a {
+		margin: 0;
+	}
 }
